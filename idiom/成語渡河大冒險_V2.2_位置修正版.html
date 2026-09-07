@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>成語渡河大冒險</title>
+<style>
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Noto Sans TC",Arial,sans-serif;background:#bdeaff;color:#382714;overflow-x:hidden}.top{position:sticky;top:0;z-index:30;background:#fff8dded;border-bottom:3px solid #80532d;padding:calc(8px + env(safe-area-inset-top)) 10px 8px;display:flex;align-items:center;gap:8px}.title{font-weight:1000;font-size:20px;flex:1;text-align:center}.pill{background:#fff;border:2px solid #80532d;border-radius:14px;padding:7px 9px;font-weight:900;font-size:13px}.btn{border:3px solid #80532d;background:#fff5c8;border-radius:14px;padding:9px 12px;font-weight:1000;box-shadow:0 3px 0 #65411f}.scene{position:relative;min-height:780px;background:linear-gradient(#c7efff 0 18%,#8ed373 18% 27%,#27aeea 27% 76%,#85cf65 76% 100%);overflow:hidden}.mountains{position:absolute;top:95px;left:-5%;width:110%;height:130px;background:linear-gradient(135deg,transparent 18%,#6f9f76 18% 33%,transparent 33%),linear-gradient(225deg,transparent 18%,#558b69 18% 33%,transparent 33%);opacity:.8}.farBank,.nearBank{position:absolute;left:0;width:100%;height:95px;background:#74bd58;border-color:#3c843d}.farBank{top:175px;border-bottom:8px solid #3d7e45}.nearBank{bottom:0;border-top:8px solid #3d7e45}.river{position:absolute;top:270px;bottom:95px;left:0;width:100%;background:repeating-linear-gradient(175deg,#20a9e5 0 22px,#43c2f0 23px 29px,#20a9e5 30px 54px);overflow:hidden}.river:after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(8deg,transparent 0 34px,#ffffff55 35px 38px,transparent 39px 65px);animation:water 5s linear infinite}@keyframes water{to{transform:translateX(70px)}}.goal{position:absolute;right:12px;top:125px;background:#fff5c8;border:3px solid #80532d;border-radius:10px;padding:8px 12px;font-weight:1000;transform:rotate(-2deg)}.question{position:absolute;z-index:12;left:50%;bottom:10px;transform:translateX(-50%);width:min(94%,680px);background:#fff7d7;border:4px solid #80532d;border-radius:20px;padding:13px 14px;text-align:center;box-shadow:0 7px 0 #65411f}.qmain{font-size:32px;font-weight:1000;letter-spacing:3px}.hint{margin-top:5px;font-size:14px;font-weight:800;color:#6a5946}.bridge{position:absolute;z-index:10;left:50%;top:214px;transform:translateX(-50%);display:flex;gap:4px;align-items:center}.plank{width:52px;height:28px;border-radius:5px;border:3px solid #633b1c;background:#d3a06c;opacity:.2;transform:rotate(var(--r))}.plank.on{opacity:1;background:#8e572c;box-shadow:inset 0 3px #c5884d}.character{position:absolute;z-index:14;left:4%;bottom:165px;font-size:54px;transition:1.3s ease}.character.cross{left:72%;bottom:560px}.net{position:absolute;z-index:14;left:calc(4% + 44px);bottom:215px;font-size:45px;transform:rotate(-25deg)}.log{position:absolute;z-index:8;width:105px;height:60px;border:4px solid #633b1c;border-radius:28px;background:linear-gradient(#a96b31,#7f451f);color:#fff;text-shadow:0 3px 0 #4d2e1c;font-size:32px;font-weight:1000;display:flex;align-items:center;justify-content:center;box-shadow:inset 0 7px #ca8b4f,0 5px 0 #164f6b;cursor:pointer;user-select:none;animation:drift linear infinite}.log:before,.log:after{content:"";position:absolute;width:13px;height:38px;border-radius:50%;background:#71401f;top:7px}.log:before{left:-5px}.log:after{right:-5px}@keyframes drift{from{transform:translateX(-145px)}to{transform:translateX(calc(100vw + 145px))}}.message{position:absolute;z-index:20;left:50%;top:285px;transform:translateX(-50%);background:#fffbe9;border:3px solid #80532d;border-radius:16px;padding:10px 15px;font-weight:1000;display:none;max-width:88%;text-align:center}.sentence{display:none;position:fixed;z-index:50;inset:0;background:#0009;align-items:center;justify-content:center;padding:18px}.card{width:min(560px,100%);background:#fffbea;border:4px solid #80532d;border-radius:22px;padding:18px;text-align:center;box-shadow:0 10px 0 #4d331c}.card h2{margin:4px 0 10px}.target{font-size:30px;font-weight:1000;color:#b14a26}.card textarea{width:100%;min-height:110px;border:3px solid #9a7048;border-radius:14px;padding:12px;font-size:18px;margin:12px 0}.judge{font-weight:900;min-height:25px;margin:8px}.actions{display:flex;gap:8px;justify-content:center;flex-wrap:wrap}.green{background:#bbf0a0}.pink{background:#ffc2db}.selectLayer{position:fixed;z-index:100;inset:0;background:linear-gradient(#bce9ff,#f7f2c9);display:flex;align-items:center;justify-content:center;padding:18px}.selectCard{width:min(520px,100%);background:#fffbea;border:4px solid #80532d;border-radius:24px;padding:20px;text-align:center;box-shadow:0 9px 0 #65411f}.players{display:grid;gap:9px;margin:15px 0}.playerBtn{font-size:18px;padding:12px}.small{font-size:13px;color:#6b6258}.timer{display:inline-flex;align-items:center;gap:5px;margin-left:8px;padding:4px 9px;border:2px solid #80532d;border-radius:999px;background:#fff;font-weight:1000}.timer.danger{background:#ffd7d7;color:#a51212;animation:pulse .55s infinite alternate}@keyframes pulse{to{transform:scale(1.06)}}.starsPop{position:fixed;z-index:90;font-size:38px;pointer-events:none;animation:pop .8s ease-out forwards}@keyframes pop{to{transform:translateY(-80px) scale(1.7);opacity:0}}
+</style></head>
+<body>
+<div class="top"><button class="btn" onclick="location.href='../index.html'">⬅️</button><div class="pill" id="playerHud">👧 未選玩家</div><div class="title">🏞️ 成語渡河大冒險</div><div class="pill" id="starHud">⭐ 0</div></div>
+<div class="scene"><div class="mountains"></div><div class="farBank"></div><div class="nearBank"></div><div class="goal">🚩 對岸終點</div><div id="bridge" class="bridge"></div><div class="river" id="river"></div><div id="msg" class="message"></div><div id="char" class="character">🧒</div><div class="net">🥅</div><div class="question"><div class="small">第 <span id="num">1</span> / 最多 10 題　｜　答對 <span id="correctNum">0</span> / 5 <span id="timer" class="timer">⏱️ 12</span></div><div id="qmain" class="qmain">一＿驚人</div><div id="hint" class="hint"></div></div></div>
+<div id="sentence" class="sentence"><div class="card"><h2>🌉 過河成功！</h2><div>請用這個成語造句：</div><div id="target" class="target">一鳴驚人</div><textarea id="sentenceInput" placeholder="例如：姐姐平常很安靜，這次比賽卻一鳴驚人，拿到第一名。"></textarea><div id="judge" class="judge"></div><div class="actions"><button class="btn green" id="judgeBtn">🤖 造句判讀</button><button class="btn pink" id="nextBtn" style="display:none">🎉 完成這一關</button></div><div class="small" style="margin-top:10px">V2：先用本機判讀測試流程；正式版再接 AI 語意判讀。</div></div></div>
+<div id="selectLayer" class="selectLayer"><div class="selectCard"><button class="btn" onclick="location.href='../index.html'" style="margin-bottom:12px;width:100%">⬅️ 返回九九神射手</button><h2>👧 選擇玩家</h2><div class="small">會讀取九九乘法神射手的同一個星星帳戶</div><div id="players" class="players"></div><input id="newName" placeholder="沒有名字？輸入新玩家姓名" style="width:100%;padding:12px;border:3px solid #9a7048;border-radius:12px;font-size:17px"><button class="btn" id="addPlayer" style="margin-top:10px">新增玩家</button></div></div>
+<script>
+const STORE_KEY='mathArcherV8';
+function defaultStore(){return {settings:{dailyLimit:3,pin:'2580',rewards:{small:{name:'小禮物',cost:45},medium:{name:'中禮物',cost:150},large:{name:'大禮物',cost:300}}},players:{}}}
+function loadStore(){try{const r=localStorage.getItem(STORE_KEY);return r?JSON.parse(r):defaultStore()}catch(e){return defaultStore()}}
+let store=loadStore();
+if(!store.settings)store.settings=defaultStore().settings;if(!store.players)store.players={};
+function save(){localStorage.setItem(STORE_KEY,JSON.stringify(store))}
+const bank=[
+{idiom:'一鳴驚人',show:'一＿驚人',ans:'鳴',opts:['鳴','明','名'],hint:'形容平常不突出，突然有傑出的表現。'},
+{idiom:'守株待兔',show:'守＿待兔',ans:'株',opts:['株','朱','珠'],hint:'比喻不主動努力，只想等待意外收穫。'},
+{idiom:'亡羊補牢',show:'亡羊＿＿',ans:'補牢',opts:['補牢','牢補','補牛'],hint:'出了問題後趕快補救，仍不算太晚。'},
+{idiom:'畫蛇添足',show:'畫蛇＿＿',ans:'添足',opts:['添足','加腳','多足'],hint:'比喻多做了不必要的事，反而不好。'},
+{idiom:'井底之蛙',show:'井底之＿',ans:'蛙',opts:['蛙','娃','窪'],hint:'比喻見識狹窄的人。'},
+{idiom:'對牛彈琴',show:'對牛＿＿',ans:'彈琴',opts:['彈琴','唱歌','吹笛'],hint:'比喻對不懂道理的人講道理。'},
+{idiom:'掩耳盜鈴',show:'掩耳＿＿',ans:'盜鈴',opts:['盜鈴','偷鐘','抓鈴'],hint:'比喻自己欺騙自己，以為別人不知道。'},
+{idiom:'刻舟求劍',show:'刻舟求＿',ans:'劍',opts:['劍','箭','刀'],hint:'比喻拘泥舊方法，不知情況已改變。'},
+{idiom:'狐假虎威',show:'狐假虎＿',ans:'威',opts:['威','危','偉'],hint:'比喻倚仗別人的勢力欺壓人。'},
+{idiom:'自相矛盾',show:'自相＿＿',ans:'矛盾',opts:['矛盾','衝突','打架'],hint:'自己的話或行為前後不一致。'},
+{idiom:'半途而廢',show:'半途而＿',ans:'廢',opts:['廢','費','飛'],hint:'事情做到一半就停止。'},
+{idiom:'全力以赴',show:'全力以＿',ans:'赴',opts:['赴','付','負'],hint:'把全部力量都投入去做。'},
+{idiom:'雪中送炭',show:'雪中送＿',ans:'炭',opts:['炭','碳','火'],hint:'在別人最需要幫助時給予援助。'},
+{idiom:'百發百中',show:'百發百＿',ans:'中',opts:['中','種','重'],hint:'形容射擊或做事非常準確。'},
+{idiom:'大公無私',show:'大公無＿',ans:'私',opts:['私','思','絲'],hint:'處理事情公平，不偏袒自己。'},
+{idiom:'一心一意',show:'一心一＿',ans:'意',opts:['意','義','億'],hint:'心思專一，沒有其他想法。'},
+{idiom:'一舉兩得',show:'一舉兩＿',ans:'得',opts:['得','德','的'],hint:'做一件事同時得到兩種好處。'},
+{idiom:'七上八下',show:'七上八＿',ans:'下',opts:['下','嚇','夏'],hint:'形容心情不安、忐忑。'},
+{idiom:'三心二意',show:'三心二＿',ans:'意',opts:['意','義','億'],hint:'形容意志不堅定，猶豫不決。'},
+{idiom:'五花八門',show:'五花八＿',ans:'門',opts:['門','們','問'],hint:'比喻種類很多、變化多端。'},
+{idiom:'九牛一毛',show:'九牛一＿',ans:'毛',opts:['毛','矛','茅'],hint:'比喻極大數量中的一小部分。'},
+{idiom:'十全十美',show:'十全十＿',ans:'美',opts:['美','每','妹'],hint:'形容非常完美，沒有缺點。'},
+{idiom:'人山人海',show:'人山人＿',ans:'海',opts:['海','害','還'],hint:'形容聚集的人非常多。'},
+{idiom:'大驚小怪',show:'大驚小＿',ans:'怪',opts:['怪','乖','拐'],hint:'對不足為奇的事情過分驚訝。'},
+{idiom:'小心翼翼',show:'小心＿＿',ans:'翼翼',opts:['翼翼','意意','憶憶'],hint:'形容非常小心謹慎。'},
+{idiom:'心平氣和',show:'心平氣＿',ans:'和',opts:['和','合','河'],hint:'心情平靜，態度溫和。'},
+{idiom:'心滿意足',show:'心滿意＿',ans:'足',opts:['足','竹','族'],hint:'非常滿足，沒有遺憾。'},
+{idiom:'天馬行空',show:'天馬行＿',ans:'空',opts:['空','控','孔'],hint:'形容想像力豐富、不受拘束。'},
+{idiom:'天衣無縫',show:'天衣無＿',ans:'縫',opts:['縫','鳳','奉'],hint:'比喻事情周密，找不到破綻。'},
+{idiom:'不約而同',show:'不約而＿',ans:'同',opts:['同','童','銅'],hint:'沒有事先商量，卻有相同做法。'},
+{idiom:'不知所措',show:'不知所＿',ans:'措',opts:['措','錯','挫'],hint:'慌張得不知道該怎麼辦。'},
+{idiom:'水落石出',show:'水落石＿',ans:'出',opts:['出','初','處'],hint:'比喻事情的真相完全顯露。'},
+{idiom:'水到渠成',show:'水到渠＿',ans:'成',opts:['成','城','誠'],hint:'條件成熟，事情自然成功。'},
+{idiom:'目不轉睛',show:'目不轉＿',ans:'睛',opts:['睛','精','晶'],hint:'眼睛一直盯著看，形容非常專注。'},
+{idiom:'目瞪口呆',show:'目瞪口＿',ans:'呆',opts:['呆','待','袋'],hint:'形容因吃驚而愣住。'},
+{idiom:'有口皆碑',show:'有口皆＿',ans:'碑',opts:['碑','杯','悲'],hint:'人人都稱讚。'},
+{idiom:'有目共睹',show:'有目共＿',ans:'睹',opts:['睹','堵','賭'],hint:'大家都看得到，事實很明顯。'},
+{idiom:'名列前茅',show:'名列前＿',ans:'茅',opts:['茅','毛','矛'],hint:'成績或名次排在前面。'},
+{idiom:'名不虛傳',show:'名不虛＿',ans:'傳',opts:['傳','船','串'],hint:'名聲和實際情況相符。'},
+{idiom:'同心協力',show:'同心協＿',ans:'力',opts:['力','立','利'],hint:'大家一條心，共同努力。'},
+{idiom:'如魚得水',show:'如魚得＿',ans:'水',opts:['水','睡','稅'],hint:'比喻得到適合自己的環境或幫助。'},
+{idiom:'快馬加鞭',show:'快馬加＿',ans:'鞭',opts:['鞭','邊','編'],hint:'比喻加快速度、更加努力。'},
+{idiom:'走馬看花',show:'走馬看＿',ans:'花',opts:['花','華','畫'],hint:'比喻粗略地觀察事物。'},
+{idiom:'東張西望',show:'東張西＿',ans:'望',opts:['望','忘','旺'],hint:'形容到處看來看去。'},
+{idiom:'南轅北轍',show:'南轅北＿',ans:'轍',opts:['轍','徹','撤'],hint:'行動和目的完全相反。'},
+{idiom:'眉開眼笑',show:'眉開眼＿',ans:'笑',opts:['笑','校','效'],hint:'形容非常高興。'},
+{idiom:'迫不及待',show:'迫不及＿',ans:'待',opts:['待','代','帶'],hint:'急迫得不能再等待。'},
+{idiom:'胸有成竹',show:'胸有成＿',ans:'竹',opts:['竹','足','築'],hint:'做事前已有完整的打算和把握。'},
+{idiom:'得意忘形',show:'得意忘＿',ans:'形',opts:['形','型','行'],hint:'高興得失去正常的態度。'},
+{idiom:'異口同聲',show:'異口同＿',ans:'聲',opts:['聲','生','升'],hint:'大家說出相同的話。'},
+{idiom:'聚精會神',show:'聚精會＿',ans:'神',opts:['神','伸','身'],hint:'集中精神，專心一意。'},
+{idiom:'熟能生巧',show:'熟能生＿',ans:'巧',opts:['巧','橋','喬'],hint:'做得熟練了，就能掌握技巧。'},
+{idiom:'旗開得勝',show:'旗開得＿',ans:'勝',opts:['勝','盛','聖'],hint:'事情一開始就取得好成績。'},
+{idiom:'勤能補拙',show:'勤能補＿',ans:'拙',opts:['拙','茁','卓'],hint:'勤奮可以彌補能力上的不足。'},
+{idiom:'喜出望外',show:'喜出望＿',ans:'外',opts:['外','歪','位'],hint:'遇到意料之外的喜事而非常高興。'},
+{idiom:'開門見山',show:'開門見＿',ans:'山',opts:['山','衫','珊'],hint:'說話或寫文章直接進入主題。'},
+{idiom:'萬眾一心',show:'萬眾一＿',ans:'心',opts:['心','新','欣'],hint:'大家團結一致。'},
+{idiom:'腳踏實地',show:'腳踏實＿',ans:'地',opts:['地','的','弟'],hint:'做事認真踏實，不浮誇。'},
+{idiom:'實事求是',show:'實事求＿',ans:'是',opts:['是','事','市'],hint:'依照實際情況處理問題。'},
+{idiom:'滴水穿石',show:'滴水穿＿',ans:'石',opts:['石','時','實'],hint:'持續努力，即使力量小也能成功。'}
+];
+let currentPlayer='',round=[],correctCount=0,attemptCount=0,questionLocked=false,timerId=null,timeLeft=12,sentenceTarget=null;
+const MAX_ATTEMPTS=10,NEED_CORRECT=5,QUESTION_SECONDS=12;
+const $=s=>document.querySelector(s);
+function todayKey(){const d=new Date();return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`}
+function getPlayer(n){if(!store.players[n])store.players[n]={stars:0,plays:{},redeemed:0};const p=store.players[n];if(typeof p.stars!=='number')p.stars=0;if(!p.idiomPlays)p.idiomPlays={};if(!Array.isArray(p.idiomRecent))p.idiomRecent=[];return p}
+function idiomPlaysToday(n){return getPlayer(n).idiomPlays[todayKey()]||0}
+function idiomRemaining(n){return Math.max(0,(+store.settings.dailyLimit||3)-idiomPlaysToday(n))}
+function consumeIdiomPlay(){if(!currentPlayer||idiomRemaining(currentPlayer)<=0)return false;const p=getPlayer(currentPlayer),k=todayKey();p.idiomPlays[k]=(p.idiomPlays[k]||0)+1;save();return true}
+function renderPlayers(){const box=$('#players');box.innerHTML='';Object.keys(store.players).forEach(n=>{const b=document.createElement('button');b.className='btn playerBtn';b.textContent=`👧 ${n}　⭐ ${getPlayer(n).stars}　今天剩 ${idiomRemaining(n)} 次`;b.disabled=idiomRemaining(n)<=0;b.style.opacity=b.disabled?'.5':'1';b.onclick=()=>selectPlayer(n);box.appendChild(b)});if(!Object.keys(store.players).length)box.innerHTML='<div class="small">目前沒有玩家，可以先新增；之後九九乘法也會看到同一個名字。</div>'}
+function selectPlayer(n){currentPlayer=n;getPlayer(n);if(!consumeIdiomPlay()){alert('今天的成語冒險次數用完囉！明天再來 ⭐');renderPlayers();return}$('#selectLayer').style.display='none';updateHud();startRound()}
+$('#addPlayer').onclick=()=>{const n=$('#newName').value.trim();if(!n)return alert('請輸入名字');getPlayer(n);save();renderPlayers();selectPlayer(n)};
+function updateHud(){$('#playerHud').textContent=`👧 ${currentPlayer}｜剩 ${idiomRemaining(currentPlayer)} 次`;$('#starHud').textContent='⭐ '+getPlayer(currentPlayer).stars}
+function shuffle(a){const b=[...a];for(let i=b.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[b[i],b[j]]=[b[j],b[i]]}return b}
+function makeRound(){const p=getPlayer(currentPlayer);const recent=new Set(p.idiomRecent.slice(-20));let pool=bank.filter(q=>!recent.has(q.idiom));if(pool.length<MAX_ATTEMPTS)pool=[...bank];const chosen=shuffle(pool).slice(0,MAX_ATTEMPTS);p.idiomRecent=[...p.idiomRecent,...chosen.map(q=>q.idiom)].slice(-30);save();return chosen}
+function startRound(){clearInterval(timerId);correctCount=0;attemptCount=0;questionLocked=false;sentenceTarget=null;$('#char').classList.remove('cross');$('#sentence').style.display='none';$('#judge').textContent='';$('#sentenceInput').value='';$('#nextBtn').style.display='none';$('#judgeBtn').style.display='inline-block';round=makeRound();renderBridge();showQuestion()}
+function renderBridge(){const b=$('#bridge');b.innerHTML='';for(let i=0;i<5;i++){const p=document.createElement('div');p.className='plank'+(i<correctCount?' on':'');p.style.setProperty('--r',((i%2?2:-2))+'deg');b.appendChild(p)}$('#correctNum').textContent=correctCount}
+function startTimer(){clearInterval(timerId);timeLeft=QUESTION_SECONDS;const t=$('#timer');t.textContent='⏱️ '+timeLeft;t.classList.remove('danger');timerId=setInterval(()=>{timeLeft--;t.textContent='⏱️ '+timeLeft;if(timeLeft<=5)t.classList.add('danger');if(timeLeft<=0){clearInterval(timerId);failQuestion('⏰ 時間到！換下一題。')}},1000)}
+function showQuestion(){if(correctCount>=NEED_CORRECT)return finishBridge();if(attemptCount>=MAX_ATTEMPTS)return failRound();questionLocked=false;const q=round[attemptCount];$('#num').textContent=attemptCount+1;$('#qmain').textContent=q.show;$('#hint').textContent='💡 '+q.hint;spawnLogs(q);startTimer()}
+function spawnLogs(q){const river=$('#river');river.querySelectorAll('.log').forEach(x=>x.remove());shuffle(q.opts).forEach((txt,i)=>{const l=document.createElement('button');l.className='log';l.textContent=txt;l.style.top=(55+i*95)+'px';l.style.left=(-140-(i*60))+'px';l.style.animationDuration=(7.2+i*.9)+'s';l.style.animationDelay=(-i*1.4)+'s';l.onclick=()=>answer(txt,l,q);river.appendChild(l)})}
+function popStars(x,y){for(let i=0;i<4;i++){const s=document.createElement('div');s.className='starsPop';s.textContent='⭐';s.style.left=(x+Math.random()*60-30)+'px';s.style.top=(y+Math.random()*30-15)+'px';document.body.appendChild(s);setTimeout(()=>s.remove(),850)}}
+function say(t,good=true){const m=$('#msg');m.textContent=t;m.style.display='block';m.style.background=good?'#efffdc':'#ffe0e0';clearTimeout(say.t);say.t=setTimeout(()=>m.style.display='none',1400)}
+function advanceQuestion(){attemptCount++;renderBridge();setTimeout(showQuestion,850)}
+function failQuestion(msg){if(questionLocked)return;questionLocked=true;clearInterval(timerId);say(msg,false);advanceQuestion()}
+function answer(txt,el,q){if(questionLocked)return;questionLocked=true;clearInterval(timerId);if(txt!==q.ans){say(`❌ 答錯了！正確是「${q.ans}」`,false);el.animate([{transform:'rotate(0)'},{transform:'rotate(-10deg)'},{transform:'rotate(10deg)'},{transform:'rotate(0)'}],{duration:350});advanceQuestion();return}const r=el.getBoundingClientRect();popStars(r.left+r.width/2,r.top);getPlayer(currentPlayer).stars+=1;save();updateHud();correctCount++;say('✅ '+q.idiom+'　橋板 +1！');attemptCount++;renderBridge();setTimeout(showQuestion,850)}
+function failRound(){clearInterval(timerId);say('🌊 這次還沒搭完橋，下次再挑戰！',false);setTimeout(()=>{alert(`本關結束：答對 ${correctCount} 題／共 ${attemptCount} 題。\n今天還能玩 ${idiomRemaining(currentPlayer)} 次。`);$('#selectLayer').style.display='flex';renderPlayers()},900)}
+function finishBridge(){clearInterval(timerId);getPlayer(currentPlayer).stars+=3;save();updateHud();say('🌉 答對 5 題！過河獎勵 ⭐ +3');$('#char').classList.add('cross');const used=round.slice(0,Math.max(1,attemptCount));sentenceTarget=used[Math.floor(Math.random()*used.length)]||round[0];setTimeout(()=>{$('#target').textContent=sentenceTarget.idiom;$('#sentence').style.display='flex'},1550)}
+$('#judgeBtn').onclick=()=>{const text=$('#sentenceInput').value.trim();const idiom=sentenceTarget.idiom;let ok=true,msg='';if(!text.includes(idiom)){ok=false;msg=`再試一次：句子裡要使用「${idiom}」喔。`}else if(text.replace(/[，。！？,.!?\s]/g,'').length<8){ok=false;msg='句子可以再完整一點，至少把「誰、做什麼」說清楚。'}else{msg='✅ 造句基本完整！正式版會再交給 AI 判斷成語意思是否使用正確。'}$('#judge').textContent=msg;$('#judge').style.color=ok?'#247228':'#b33';if(ok){$('#judgeBtn').style.display='none';$('#nextBtn').style.display='inline-block'}};
+$('#nextBtn').onclick=()=>{getPlayer(currentPlayer).stars+=5;save();updateHud();alert(`🎉 破關成功！\n答題 5 顆＋搭橋 3 顆＋造句 5 顆＝13 顆星星 ⭐\n今天還能玩 ${idiomRemaining(currentPlayer)} 次。`);$('#selectLayer').style.display='flex';renderPlayers()};
+renderPlayers();
+
+</script></body></html>
